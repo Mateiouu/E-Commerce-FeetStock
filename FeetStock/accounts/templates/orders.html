@@ -13,8 +13,10 @@
 <br>
 <br>
     <p>Numero de Transaccion: {{order.transaction_id}}</p>
-    <p> Fecha de pedido: {{order.date_ordered}}</p>
-    <p> Estado de pedido: {% if order.complte == True %}
+    <p> Fecha de pedido: {{order.date_added}}</p>
+    <p> Fecha de pedido: {{order.orderitem.product}}</p>
+    <p> Fecha de pedido: {{items}}</p>
+    <p> Estado de pedido: {% if order.complete == True %}
         <p>Completo</p>
     {% else %}
     <p>Pendiente</p>

@@ -1,24 +1,17 @@
-from re import template
+
 from django.shortcuts import render
-from django.http import Http404, HttpResponse
 from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
-from django.views.generic import CreateView, ListView, UpdateView, DeleteView, DetailView
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm, UserChangeForm
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
-from django.contrib.admin.views.decorators import staff_member_required
-
 from store.forms import EditProfileForm
 from store.models import *
-import json
-from django.views.generic import CreateView
+
 from store.forms import CreateUserForm
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect
-from django.views.decorators.http import require_http_methods
+from django.shortcuts import  redirect
 from django.views import generic
 
 # Create your views here.
@@ -88,4 +81,11 @@ def userpage(request):
 
     context = {'orders': orders}
     return render(request, 'orders.html', context)
+
+
+
+    
+
+
+   
 

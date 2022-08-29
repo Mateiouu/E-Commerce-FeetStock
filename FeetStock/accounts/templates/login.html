@@ -1,0 +1,51 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+
+{% block content %}
+<body class = "loginbody" style = "background-image:url('{% static 'images/purple.jpg' %}')">
+    
+
+    
+
+<form class = "loginform" action="{% url 'login' %}"method="POST">{%csrf_token%}
+   
+    <table>
+         {{miFormulario.as_table}}
+         
+    </table>
+    <input type="submit" value="Iniciar Sesion">
+  
+ </form>
+ <h4 style = "color: white"><strong>No tienes una cuenta? No hay problema. Haga click en "Registrar" para hacerlo</strong></h4>
+ <br>
+ <a class="a" href = "{% url 'register' %}">Registrar</a>
+ 
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+</body>
+{% endblock content %}
+    

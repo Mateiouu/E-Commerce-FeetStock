@@ -1,0 +1,21 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<body class = "aboutus" style = "background-image: url('{% static 'images/programando.jpg' %}');background-repeat: no-repeat center center fixed; ">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style = "font-size: 40px">FeetStock</h1>
+<p> Producto eliminado </p>
+<a href = "{% url 'cart' %}">Volver al carrito</a>
+
+
+</body>
+
+
+{% endblock content %}

@@ -1,0 +1,44 @@
+
+ {% extends 'store/main.html' %}
+ {% load static %}
+ 
+ 
+ {% block content %}
+ <body class = "loginbody" style = "background-image:url('{% static 'images/purple.jpg' %}')">
+     
+ 
+     
+ 
+    <form action="{% url 'creauser' %}"method="POST">{%csrf_token%}
+        <!-- Acá está la magia de Django -->
+       {{form.as_p}}
+        <input type="submit" value="Enviar">
+     </form>
+ 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ </body>
+ {% endblock content %}
+     

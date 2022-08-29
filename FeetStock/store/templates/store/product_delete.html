@@ -1,0 +1,56 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<body class = "loginbody" style = "background-image:url('{% static 'images/purple.jpg' %}')">
+    
+
+    <form class = "loginform "method= "POST">{% csrf_token %}
+        <p>Vas a eliminar el siguiente producto: <strong>{{product.name}} </strong></p>
+        <p>Estas seguro de que quieres eliminar este producto?</p>
+        <input type="submit" name="Confirmar" value="Confirmar">
+        <a href = "{% url 'store' %}">Cancelar</a>
+    </form>
+
+  
+     
+    
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    </body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+{% endblock content %}

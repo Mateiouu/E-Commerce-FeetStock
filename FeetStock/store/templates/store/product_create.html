@@ -1,0 +1,57 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<body class = "loginbody" style = "background-image:url('{% static 'images/purple.jpg' %}')">
+    
+
+    <form class = 'loginform' method="POST" enctype="multipart/form-data">{%csrf_token%}
+   
+    
+        {{form.as_p}}
+   
+   <input type="submit" value="Enviar">
+</form>
+
+    
+     
+    
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    </body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+{% endblock content %}

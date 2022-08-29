@@ -1,0 +1,53 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<body class = "loginbody" style = "background-image:url('{% static 'images/purple.jpg' %}')">
+
+
+
+
+{% for order in orders   %}
+<div class = "logout">
+<br>
+<br>
+    <p>Numero de Transaccion: {{order.transaction_id}}</p>
+    <p> Fecha de pedido: {{order.date_ordered}}</p>
+    <p> Estado de pedido: {% if order.complte == True %}
+        <p>Completo</p>
+    {% else %}
+    <p>Pendiente</p>
+    {% endif %}</p>
+
+
+
+   
+
+    
+        
+</div>
+<br>
+<br>
+{% endfor %}
+
+    
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+</div>
+
+
+    
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<body class = "storebody">
+<div class="row">
+    
+    {% for product in products %}
+      
+      {% if product.sex == "Hombre" %}
+    
+      {%if user.is_staff %}
+      <div class="col">
+       <img class="thumbnail"src="{{product.image.url}}">
+       <div class="box">
+            <h1><strong>{{product.name}}</strong></h1>
+            <hr>
+            <br>  <br>  
+            <a class="a" href="{% url 'product' product.id %}"> Ver </a>
+            <a class="a" href="{% url 'eliminar' product.id %}"> Eliminar </a>
+            <a class="a" href="{% url 'editar' product.id %}"> Editar </a>
+            <br>
+            <br>
+            
+            <h4 style="display:inline-block; float:right">${{product.price|floatformat:2}}</h4>
+       </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+      {% else %}
+        
+      <div class="col">
+           <img class="thumbnail"src="{{product.image.url}}">
+           <div class="box">
+                <h1><strong>{{product.name}}</strong></h1>
+                <hr>
+                <br>  <br>  
+                <a class="a" href="{% url 'product' product.id %}"> Ver </a>
+                <h4 style="display:inline-block; float:right">${{product.price|floatformat:2}}</h4>
+           </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+
+</div>
+</body>
+{% endblock content %}

@@ -1,0 +1,36 @@
+
+
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<body class  = 'product'>
+	<div class = "product-container">
+	    
+		    <img class = "productpic" src="{{product.image.url}}">
+	   
+
+	 <div style="padding:50px" >
+
+		<h3>{{product.name}}</h3>
+		<hr>
+		
+		<form method="POST" action="{% url 'product' product.id %}">{% csrf_token %}
+			<br>
+			<p>Cantidad</p>
+			<input class = "probtn" min="1" value=1 type="number" name="quantity">
+			<br>
+			<br>
+			<br>
+			<input class="a" type="submit" value="Agregar a carrito">
+		</form>
+	</div>
+
+		<h3 style = "color: white">Precio: ${{product.price}}</h3>
+	 </div>
+    
+
+
+	</body>
+
+{% endblock content %}

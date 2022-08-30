@@ -1,2 +1,8 @@
 # E-Commerce-FeetStock
 Proyecto Final Coderhouse
+
+Este es el proyecto final de Coderhouse, en el cual hice una web tipo e-commerce utilizando python con su respectico framework, Django. Una vez en la pagina inicial de la web, veremos un navbar en la parte superior con la cual ya podemos ingresar a la tienda y ver los productos disponibles. El boton de "Zapatillas" no solo es un boton, sino que al hacer hover por encima despliega 3 opciones, hombres ninios y mujeres. Cada opcion nos dirigira hacia la tienda que presente los productos pertenecientes a dicho genero. En el caso de querer agregar uno o varios productos al carrito de compra, en caso de no estar loggeados, la web nos dirigira hacia un template en el cual lo podemos hacer. Asi mismo, si no poseemos una cuenta, este formulario tambien contara con una opcion de registrarnos. Una vez agregados los productos y haciendo click en comprar, recibiremos una notifiacion de que el producto ha sido comoprado. En este caso, en la zona del navbar donde dice "Hola y tu nombre", podremos acceder a nuestras ordenes o comprar que hemos hecho. Asi mismo en esta seccion de Perfil, podremos cambiar nuestra contraseña, nombre de usuario, nombre y apellido, email.
+
+Si la cuenta loggeada pertenece al staff, en la seccion de tienda, este vera mas opciones que un usuario normal. Desde alli, el staff podra: editar productos y eliminarlos. A si mismo en el navbar sobre zapatillas, una opcion le permitira agregar nuevos productos a la tienda. Por otro lado, en la route /admin, el usuario en cuestion podra acceder a los diferentes modelos con sus respectiva informacion, pudiendo a la vez, editar todo de forma mas sencilla.
+
+Espero que les guste esta Web por la que trabaje :)
